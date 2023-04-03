@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:event id="123456" xmlns:tns="http://www.eventmanagement.org/event" xmlns:tns1="http://www.eventmanagement.org/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eventmanagement.org/event event.xsd ">
+  <tns:name>Match</tns:name>
+  <tns:description>This is wonderful cricket match</tns:description>
+  <tns:ticketprice>2000</tns:ticketprice>
+  <tns:starttime>12:00:00</tns:starttime>
+  <tns:endtime>02:00:00</tns:endtime>
+  <tns:organizer id="123456">
+    <tns:name>somename</tns:name>
+    <tns:email>kundu@gmail.com</tns:email>
+    <tns:phone>3295649658</tns:phone>
+  </tns:organizer>
+  <tns:venue>
+    <tns:name>somename</tns:name>
+    <tns:address id="123456">
+      <tns:street>tns:street</tns:street>
+      <tns:city>tns:city</tns:city>
+      <tns:state>tns:state</tns:state>
+      <tns:country>UK</tns:country>
+      <tns:zipcode>0</tns:zipcode>
+    </tns:address>
+  </tns:venue>
+  <tns:participant id="123456">
+    <tns:name>tns:name</tns:name>
+    <tns:email>kundu@gmail.com</tns:email>
+    <tns:phone>4597856321</tns:phone>
+  </tns:participant>
+  <tns:participant id="123456">
+    <tns:name>tns:name</tns:name>
+    <tns:email>kundu@gmail.com</tns:email>
+    <tns:phone>3429634585</tns:phone>
+  </tns:participant>
+  <tns:participant id="123456">
+    <tns:name>tns:name</tns:name>
+    <tns:email>kundu@gmail.com</tns:email>
+    <tns:phone>4598756932</tns:phone>
+  </tns:participant>
+</tns:event>

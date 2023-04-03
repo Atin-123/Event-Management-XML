@@ -24,6 +24,7 @@
 			<element name="country" type="string" />
 			<element name="zipcode" type="int" />
 		</sequence>
+		<attribute name="id" type="common:idRestrict" use="required"/>
 	</complexType>
 
 </schema>

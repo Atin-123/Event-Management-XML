@@ -27,4 +27,10 @@
 			<pattern value="[^@]+@[^\.]+\..+"></pattern>
 		</restriction>
 	</simpleType>
+	
+	<simpleType name="idRestrict">
+		<restriction base="string">
+			<pattern value="[0-9]{6}"></pattern>
+		</restriction>
+	</simpleType>
 </schema>

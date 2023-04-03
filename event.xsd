@@ -15,12 +15,13 @@
 				<element name="name" type="common:nameRestrict" />
 				<element name="description" type="common:descriptionRestrict" />
 				<element name="ticketprice" type="string" />
-				<element name="starttime" type="date" />
-				<element name="endtime" type="date" />
+				<element name="starttime" type="time" />
+				<element name="endtime" type="time" />
 				<element name="organizer" type="tns:organizer" />
 				<element name="venue" type="tns:venue" />
 				<element name="participant" type="tns:participant" minOccurs="3" maxOccurs="unbounded"/>
 			</sequence>
+			<attribute name="id" type="common:idRestrict" use="required"/>
 		</complexType>
 	</element>
 
