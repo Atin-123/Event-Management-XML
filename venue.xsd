@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/venue" xmlns:tns="http://www.example.org/venue" elementFormDefault="qualified">
+
+<element name="venue">
+	<complexType>
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="address" type="tns:address"/>
+		</sequence>
+	</complexType>
+</element>
+
+<complexType name="address">
+	<sequence>
+		<element name="street" type="string"/>
+		<element name="city" type="string"/>
+		<element name="state" type="string"/>
+		<element name="country" type="string"/>
+		<element name="zipcode"  type="int"/>
+	</sequence>
+</complexType>
+
+</schema>

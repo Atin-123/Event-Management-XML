@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/event" xmlns:tns="http://www.example.org/event" elementFormDefault="qualified">
+
+<element name="event">
+	<complexType>
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="description" type="string"/>
+			<element name="ticketprice" type="string"/>
+			<element name="starttime" type="date"/>
+			<element name="endtime" type="date"/>
+			<element name="organizer" type="string"/>
+			<element name="venue" type="string"/>
+			<element name="participant" type="string"/>
+		</sequence>
+	</complexType>
+</element>
+
+</schema>

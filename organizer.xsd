@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/organizer" xmlns:tns="http://www.example.org/organizer" elementFormDefault="qualified">
+
+<element name="organizer">
+	<complexType>
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="email" type="string"/>
+			<element name="phone" type="string"/>
+		</sequence>
+	</complexType>
+</element>
+
+</schema>
