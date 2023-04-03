@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.eventmanagement.org/common"
+	xmlns:tns="http://www.eventmanagement.org/common"
+	elementFormDefault="qualified">
+	
+	<simpleType name="nameRestrict">
+		<restriction base="string">
+			<maxLength value="25"/>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="descriptionRestrict">
+		<restriction base="string">
+			<maxLength value="200"/>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="phoneRestrict">
+		<restriction base="string">
+			<pattern value="[0-9]{10}"></pattern>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="emailRestrict">
+		<restriction base="string">
+			<pattern value="[^@]+@[^\.]+\..+"></pattern>
+		</restriction>
+	</simpleType>
+</schema>

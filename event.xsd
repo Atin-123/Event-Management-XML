@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/event" xmlns:tns="http://www.example.org/event" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.eventmanagement.org/event"
+	xmlns:tns="http://www.eventmanagement.org/event" elementFormDefault="qualified"
+	xmlns:common="http://www.eventmanagement.org/common">
+	
+	<include schemaLocation="organizer.xsd"/>
+	<include schemaLocation="participant.xsd"/>
+	<include schemaLocation="venue.xsd"/>
+	<import schemaLocation="common.xsd" namespace="http://www.eventmanagement.org/common"/>
 
-<element name="event">
-	<complexType>
-		<sequence>
-			<element name="name" type="string"/>
-			<element name="description" type="string"/>
-			<element name="ticketprice" type="string"/>
-			<element name="starttime" type="date"/>
-			<element name="endtime" type="date"/>
-			<element name="organizer" type="string"/>
-			<element name="venue" type="string"/>
-			<element name="participant" type="string"/>
-		</sequence>
-	</complexType>
-</element>
+	<element name="event">
+		<complexType>
+			<sequence>
+				<element name="name" type="common:nameRestrict" />
+				<element name="description" type="common:descriptionRestrict" />
+				<element name="ticketprice" type="string" />
+				<element name="starttime" type="date" />
+				<element name="endtime" type="date" />
+				<element name="organizer" type="tns:organizer" />
+				<element name="venue" type="tns:venue" />
+				<element name="participant" type="tns:participant" minOccurs="3" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
 
 </schema>
